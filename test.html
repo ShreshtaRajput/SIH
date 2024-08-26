@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>FarmLogs</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="test.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand title" href="#"><b>FarmLogs</b></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="d-flex" role="search">
+            <button class="btn btn-success" type="submit">
+              + Log Activity
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Sidebar -->
+        <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <div class="overview">
+              <h5>Overview</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <i class="fa-solid fa-house"></i>
+                  <a class="nav-link active" href="#">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                  <i class="fa-solid fa-map"></i>
+                  <a class="nav-link" href="#">Map</a>
+                </li>
+                <li class="nav-item">
+                  <i class="fa-solid fa-calendar-days"></i>
+                  <a class="nav-link" href="#">Calendar</a>
+                </li>
+                <li class="nav-item">
+                  <i class="fa-solid fa-pen"></i>
+                  <a class="nav-link" href="#">Planning</a>
+                </li>
+              </ul>
+            </div>
+            <div class="analyze">
+              <h5>Analyze</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <i class="fa-solid fa-leaf"></i>
+                  <a class="nav-link" href="#">Crops</a>
+                </li>
+                <li class="nav-item">
+                  <i class="fa-solid fa-boxes-stacked"></i>
+                  <a class="nav-link" href="#">Inventory</a>
+                </li>
+                <li class="nav-item">
+                  <i class="fa-solid fa-screwdriver-wrench"></i>
+                  <a class="nav-link" href="#">Equipment</a>
+                </li>
+              </ul>
+            </div>
+            <div class="learn">
+              <h5>Learn</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <i class="fa-solid fa-cloud"></i>
+                  <a class="nav-link" href="#">Weather</a>
+                </li>
+                <li class="nav-item">
+                  <i class="fa-solid fa-chart-simple"></i>
+                  <a class="nav-link" href="#">Markets</a>
+                </li>
+              </ul>
+            </div>
+            <div class="other">
+              <h5>Others</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <i class="fa-solid fa-gear"></i>
+                  <a class="nav-link" href="#">Settings</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+          <div
+            class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3"
+          >
+            <h1 class="h2">Crops</h1>
+            <div class="btn-toolbar mb-2 mb-md-0">
+              <button type="button" class="btn btn-sm btn-outline-secondary">
+                2013
+              </button>
+            </div>
+          </div>
+
+          <!-- Crop Data Section -->
+          <div class="row">
+            <div class="col-md-8">
+              <div class="card mb-4">
+                <div class="card-body crop-card card-header">
+                  <div class="crop-card-title">
+                    <h5 class="card-title">All Crops</h5>
+                    <p>24 fields, 2,082.3 acres</p>
+                  </div>
+                  <div class="buton">
+                    <button class="btn btn-secondary">View</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mb-4">
+                <div class="card-body crop-card">
+                  <div class="crop-card-title">
+                    <h5 class="card-title">Soybeans</h5>
+                    <p>8 fields, 750.7 acres</p>
+                  </div>
+                  <div class="buton">
+                    <button class="btn btn-outline-secondary">View</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mb-4">
+                <div class="card-body crop-card">
+                  <div class="crop-card-title">
+                    <h5 class="card-title">Corn</h5>
+                    <p>8 fields, 676.3 acres</p>
+                  </div>
+                  <div class="buton">
+                    <button class="btn btn-outline-secondary">View</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mb-4">
+                <div class="card-body crop-card">
+                  <div class="crop-card-title">
+                    <h5 class="card-title">Wheat</h5>
+                    <p>3 fields, 304.1 acres</p>
+                  </div>
+                  <div class="buton">
+                    <button class="btn btn-outline-secondary">View</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Crops Overview</h5>
+                  <canvas id="pieChart"></canvas>
+                  <p class="mt-4">Not grown this year:</p>
+                  <ul>
+                    <li>Dry Beans</li>
+                    <li>Sugar Beets</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Chart.js for pie chart -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      var ctx = document.getElementById("pieChart").getContext("2d");
+      var pieChart = new Chart(ctx, {
+        type: "pie",
+        data: {
+          labels: ["Soybeans", "Corn", "Wheat", "Others"],
+          datasets: [
+            {
+              data: [750.7, 676.3, 304.1, 351.2], // Example data
+              backgroundColor: ["#4CAF50", "#FFEB3B", "#FFC107", "#2196F3"],
+            },
+          ],
+        },
+      });
+    </script>
+  </body>
+</html>
